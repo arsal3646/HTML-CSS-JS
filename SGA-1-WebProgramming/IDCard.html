@@ -1,6 +1,6 @@
 <!-- I clicked the "New File" button and created a new file named "IDCard.html". -->
 
-<!-- I pressed EXCLAMATION MARK (!) and then pressed the "TAB" key to generate the basic HTML structure. -->
+<!-- I pressed EXCLAMATION MARK (!) and then pressed the "TAB" key. This automatically generated the basic HTML structure. -->
 
 <!-- The basic HTML structure includes:
 1. DOCTYPE declaration (HTML5 document)
@@ -12,7 +12,6 @@
 4. title element
 5. body element -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +20,29 @@
     <title>My ID Card</title>
 </head>
 <body>
+    <!-- We will use div tag because it is a block-level element that can contain other HTML elements and allows us to group related content together. 
+    From our previous courses, I can kind of relate this to structures in C programming language, where we can group related data together.
+    It also provides a container for styling and layout purposes, making it easier to organize the information on the ID card. -->
+
     
+    <div>   
+        <h1>My ID Card</h1>
+        <p>Name: Arsalan Afridi</p>
+    
+        <!-- I am using the <p> tag to display text because it is simple and designed for paragraphs. 
+        The main benefit is that it automatically moves to a new line. 
+        This benefit allows that piece of information appears clearly instead of being crowded on the same line. -->
+
+        <p>Date of Birth: Sep 07, 1996</p>
+        <p>Department: Finance</p>
+        <p>Address: 123 Main Street, Djanke, Namibia</p>
+        <p>Mobile Number: 0091-123-897-6453</p>
+        <p>Email ID: arsalan.afridi@example.com</p>
+
+        <!-- <p>Photograph</p> This will not work. We need to use img tag-->
+         <img src="https://media.licdn.com/dms/image/v2/C4D03AQHs8E5nZ1sVeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517246170289?e=2147483647&v=beta&t=U6ERi0_mt-0xwpMM4C6TPuVz-GH4L8kZsdIuryunD8Q" alt="Student Photo">
+    </div>
+
+
 </body>
 </html>
