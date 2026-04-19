@@ -2,11 +2,11 @@ body
 {
     /*  This is the CSS file for styling the ID card webpage. 
         It sets the background color and text color for the entire page.
-        The background color is set to moccasin while the text color is set to black. 
+        The background color is set to moccasin while the text color is set to maroon, my favorite color. 
     */
     
     background-color: moccasin;  
-    color: black;
+    color: maroon;
 }
 
 .id-card 
@@ -18,7 +18,7 @@ body
         I used min-height and min-width to ensure that the card maintains a minimum size, even if the content inside it is smaller.
         Height and width were setting fixed dimensions, causing text overflow issues as the content inside the card exceeded those dimensions.
     */
-    
+
     min-width: 300px;
     min-height: 200px;
     border: 2px solid black;
