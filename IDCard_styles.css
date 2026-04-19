@@ -27,3 +27,17 @@ body
 
     text-align: center;
 }
+
+img
+{   /*  This styles the image within the ID card. 
+        It sets the width and height of the image, and applies a border radius to make it circular. 
+        50% border radius means that the image will be perfectly circular, as long as the width and height are equal.
+        if we increase it to 100%, it will still be circular, but it may not fit within the dimensions of the image, potentially causing distortion.
+        75% border radius would create an oval shape if the width and height are not equal, and a perfect circle if they are equal.
+    */
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
