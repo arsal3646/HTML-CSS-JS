@@ -44,11 +44,14 @@ body
     /*  I changed the text alignbment to left for the paragraphs within the ID card.
         The centered text was harder to read, especially for longer paragraphs like the address in our ID Card.
     */
-    .id-card p {
+    
+}
+
+    /* Text-align to left ensures that all the text within the ID is aligned to the left*/
+
+.id-card p {
     text-align: left;
 }
-}
-    /* Text-align to left ensures that all the text within the ID is aligned to the left*/
 
 .details {
     text-align: left;
