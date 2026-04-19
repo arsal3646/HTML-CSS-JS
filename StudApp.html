@@ -13,8 +13,16 @@
         I will be adding input fields, labels, and buttons for the applicants to fill out their information.  -->
     
     <form>
+        
         <label>Student Name:</label>
-        <input type="text">
+
+        <!-- 
+            * Placeholder is beautiful thing that shows the user what to input in the field. It disappears when the user starts typing.
+            * Onfocusout is an event that triggers when the user clicks outside the input field - which means they have finished entering their name. The checkName() function will be called when this event occurs.
+            * It can be used to validate the input or provide feedback to the user. 
+        -->
+
+        <input type="text" id="name" placeholder="Rahul J Shankar" onfocusout="checkName()">
 
     </form>
 
