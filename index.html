@@ -1,0 +1,78 @@
+<!-- I clicked the "New File" button and created a new file named "IDCard.html". -->
+
+<!-- I pressed EXCLAMATION MARK (!) and then pressed the "TAB" key. This automatically generated the basic HTML structure. -->
+
+<!-- The basic HTML structure includes:
+1. DOCTYPE declaration (HTML5 document)
+2. HTML language set to English
+3. head element with meta charset and viewport
+   * 'meta data' provides information about the document
+   * charset UTF-8 (supports wide range of characters)
+   * UTF-8 vs ASCII (UTF-8 supports more characters)
+   * viewport (controls layout on mobile devices or other screens)
+4. title element (This is the title of the webpage that appears in the browser tab)
+5. body element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ID Card</title>
+
+    <!-- We will link our CSS file here. 
+    This is important because it allows us to separate the content (HTML) from the presentation (CSS).
+    By linking the CSS file, we can apply styles to our HTML elements and make our ID card visually appealing.
+    We are using external CSS file. The benefits of using an external CSS file include:
+        * Reusability: We can use the same CSS file for multiple HTML documents.
+        * Maintainability: It is easier to maintain and update styles in a single CSS file rather than modifying inline styles in multiple files.
+
+    The href attribute specifies the path to the CSS file. 
+    
+    *   In our case, we are assuming that the CSS file is in the same directory as our HTML file. 
+        This is called a relative path. It is relative to the location of the HTML file.
+    
+    *   If the CSS file were in a different directory, we would need to provide the correct path.
+
+    The rel attribute specifies the relationship between the current document and the linked resource. 
+    In this case, it is set to "stylesheet" to indicate that the linked file is a CSS stylesheet.
+    
+    I used link tag to link the CSS file because it is the standard way to include external stylesheets in HTML. 
+    It allows us to keep our HTML clean and organized while still applying styles to our elements. -->
+
+    <link rel="stylesheet" href="IDCard_styles.css">
+
+</head>
+<body>
+
+    <!-- We will use div tag because it is a block-level element that can contain other HTML elements and allows us to group related content together. 
+    From our previous courses, I can kind of relate this to structures in C programming language, where we can group related data together.
+    It also provides a container for styling and layout purposes, making it easier to organize the information on the ID card. -->
+    
+    <div class="id-card">
+
+        <!-- the id-card class is used to apply specific styles to the ID card using our CSS file.
+        * By using a class, we can easily apply the same styles to multiple element.
+        * The class attribute allows us to assign a class name to an HTML element, which can then be targeted in the CSS file to apply specific styles to that element. -->
+
+        <h1>My ID Card</h1>
+
+        <!-- <p>Photograph</p> This will not work. We need to use img tag-->
+        <img src="https://media.licdn.com/dms/image/v2/C4D03AQHs8E5nZ1sVeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517246170289?e=2147483647&v=beta&t=U6ERi0_mt-0xwpMM4C6TPuVz-GH4L8kZsdIuryunD8Q" alt="Student Photo">
+
+        
+        <p>Name: Arsalan Afridi</p>
+    
+        <!-- I am using the <p> tag to display text because it is simple and designed for paragraphs. 
+        The main benefit is that it automatically moves to a new line. 
+        This benefit allows that piece of information appears clearly instead of being crowded on the same line. -->
+
+        <p>Date of Birth: Sep 07, 1996</p>
+        <p>Department: Finance</p>
+        <p>Address: 123 Main Street, Djanke, Namibia</p>
+        <p>Mobile Number: +91-123-897-6453</p>
+        <p>Email ID: arsalan.afridi@example.com</p>
+    </div>
+
+</body>
+</html>

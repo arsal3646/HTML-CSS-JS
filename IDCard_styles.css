@@ -1,5 +1,16 @@
 body 
 {
     background-color: moccasin;
-    
+    color: black;
+}
+
+.id-card 
+{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
 }
