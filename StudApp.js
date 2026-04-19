@@ -9,7 +9,7 @@ alert("Welcome to the Student Form area!");
         Using if statement, we check if the value is an empty string. If yes, we alert the user that the name cannot be empty.
 */  
 
-function checkName() {
+function NameValidation() {
 
     var nameValue = document.getElementById("studentName").value;
 
