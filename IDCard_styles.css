@@ -1,11 +1,22 @@
 body 
 {
-    background-color: moccasin;
+    /*  This is the CSS file for styling the ID card webpage. 
+        It sets the background color and text color for the entire page.
+        The background color is set to moccasin while the text color is set to black. 
+    */
+    
+    background-color: moccasin;  
     color: black;
 }
 
 .id-card 
 {
+    /*  This class styles the ID card container. 
+        It sets the width and height of the card, adds a border with rounded corners, and applies padding and margin for spacing. 
+        Padding means the space inside the border of the card.
+        Margin means the space outside the border of the card, separating it from other elements on the page. 
+    */
+
     width: 300px;
     height: 200px;
     border: 2px solid black;
