@@ -15,10 +15,12 @@ body
         It sets the width and height of the card, adds a border with rounded corners, and applies padding and margin for spacing. 
         Padding means the space inside the border of the card, i.e. the space between the content of the card and its border.
         Margin means the space outside the border of the card, i.e. the space between the card (borders) and other elements on the page.
+        I used min-height and min-width to ensure that the card maintains a minimum size, even if the content inside it is smaller.
+        Height and width were setting fixed dimensions, causing text overflow issues as the content inside the card exceeded those dimensions.
     */
-
-    width: 300px;
-    height: 200px;
+    
+    min-width: 300px;
+    min-height: 200px;
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
