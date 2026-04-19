@@ -33,7 +33,7 @@ body
     margin: 40px auto;
     background-color: white;
 
-    text-align: center;
+    text-align: center; 
 
     /* I added a box shadow to give the ID card a three-dimensional look. 
        The values for the box-shadow property specify the horizontal offset, vertical offset, blur radius, and color of the shadow.
@@ -47,6 +47,11 @@ body
     .id-card p {
     text-align: left;
 }
+}
+    /* Text-align to left ensures that all the text within the ID is aligned to the left*/
+
+.details {
+    text-align: left;
 }
 
 img
@@ -77,3 +82,4 @@ h1 {
 p {
     margin: 5px 0;
 }
+
