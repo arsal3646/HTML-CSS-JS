@@ -19,7 +19,7 @@ body
         Height and width were setting fixed dimensions, causing text overflow issues as the content inside the card exceeded those dimensions.
     */
 
-    width: 300px;
+    width: 340px;
     min-height: 200px;
     border: 2px solid black;
     border-radius: 10px;
@@ -51,15 +51,6 @@ body
 
 .id-card p {
     text-align: left;
-}
-
-    /*  This styles the 'strong' elements within the ID card.  
-        I set it to inline-block and gave it a fixed width to create a label-like effect for the fields in the ID card.
-    */
-
-.id-card strong {
-    display: inline-block;
-    width: 120px;
 }
 
 img
