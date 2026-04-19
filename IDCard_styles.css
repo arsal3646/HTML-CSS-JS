@@ -40,6 +40,13 @@ body
        This creates a subtle shadow effect that makes the card stand out against the background.
     */
     box-shadow: 2px 2px 10px gray;
+
+    /*  I changed the text alignbment to left for the paragraphs within the ID card.
+        The centered text was harder to read, especially for longer paragraphs like the address in our ID Card.
+    */
+    .id-card p {
+    text-align: left;
+}
 }
 
 img
