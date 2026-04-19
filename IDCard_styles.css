@@ -13,8 +13,8 @@ body
 {
     /*  This class styles the ID card container. 
         It sets the width and height of the card, adds a border with rounded corners, and applies padding and margin for spacing. 
-        Padding means the space inside the border of the card.
-        Margin means the space outside the border of the card, separating it from other elements on the page. 
+        Padding means the space inside the border of the card, i.e. the space between the content of the card and its border.
+        Margin means the space outside the border of the card, i.e. the space between the card (borders) and other elements on the page.
     */
 
     width: 300px;
