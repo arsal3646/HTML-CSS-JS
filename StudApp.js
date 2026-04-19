@@ -89,3 +89,36 @@ function validateDOB() {
 }
 
 }
+
+/* Rule 5: Mobile Number field should not be empty. Also, it should not start with 0 and should only contain digits from 0 to 9.
+
+        * The below function will check if the mobile number field is empty and alert the user if it is not filled in.
+*/
+
+function validateMobile() {
+
+    var mobileValue = document.getElementById("mobile").value.trim();
+
+    if (mobileValue === "") {
+        alert("Mobile Number cannot be empty. Please enter your mobile number.");
+        document.getElementById("mobile").value = "";
+        return;
+    }
+
+    if (mobileValue[0] === "0") {   // This checks whether first character of the mobile number is "0" or not.
+        alert("Mobile Number cannot start with 0. Kindly enter a valid mobile number.");
+        document.getElementById("mobile").value = "";
+        return;
+    }
+
+    var mobilePattern = /^[0-9]+$/;    // This regular expression checks if the mobile number contains only digits from 0 to 9. 
+
+    if (!mobilePattern.test(mobileValue)) {   
+        
+        // If the mobile number does not match, we alert the user.
+        
+        alert("Mobile Number should contain only digits from 0 to 9.");
+        document.getElementById("mobile").value = "";
+    }
+}
+
