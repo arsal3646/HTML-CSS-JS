@@ -41,3 +41,11 @@ img
     border-radius: 50%;
 
 }
+
+    /*  This styles the paragraphs within the ID card. 
+        This means that any <p> element inside the .id-card class will have these styles applied. 
+    */
+
+p {
+    margin: 5px 0;
+}
