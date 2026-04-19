@@ -122,3 +122,39 @@ function validateMobile() {
     }
 }
 
+/* Rule 6: Email ID validations:
+
+        * Email ID field should not be empty
+        * It must contain "@"
+        * It should not begin with "@"
+        * It should end with ".com" or ".in"
+*/
+
+function validateEmail() {
+
+    var emailValue = document.getElementById("email").value.trim();
+
+    if (emailValue === "") {
+        alert("Email ID cannot be empty. Please enter your email ID.");
+        document.getElementById("email").value = "";
+        return;
+    }
+
+    if (emailValue[0] === "@") {
+        alert("Email ID cannot begin with @. Please enter a valid email ID.");
+        document.getElementById("email").value = "";
+        return;
+    }
+
+    if (!emailValue.includes("@")) {
+        alert("Email ID must contain @ symbol.");
+        document.getElementById("email").value = "";
+        return;
+    }
+
+    if (!(emailValue.endsWith(".com") || emailValue.endsWith(".in"))) {     // "||" is the logical OR operator.
+        alert("Email ID must end with .com or .in");
+        document.getElementById("email").value = "";
+    }
+}
+
