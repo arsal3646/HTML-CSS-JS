@@ -1,4 +1,4 @@
-alert("Welcome to the Student Form area!");
+// alert("Welcome to the Student Form area!");
 
 /* Name Validation:
         The below function will check if the name field is empty and alert the user if it is not filled in.
