@@ -53,6 +53,15 @@ body
     text-align: left;
 }
 
+    /*  This styles the 'strong' elements within the ID card.  
+        I set it to inline-block and gave it a fixed width to create a label-like effect for the fields in the ID card.
+    */
+
+.id-card strong {
+    display: inline-block;
+    width: 120px;
+}
+
 img
 {   /*  This styles the image within the ID card. 
         It sets the width and height of the image, and applies a border radius to make it circular. 
@@ -64,6 +73,9 @@ img
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    
+    display: block;
+    margin: 0 auto 15px auto;
 
 }
 
