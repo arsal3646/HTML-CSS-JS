@@ -50,6 +50,13 @@ img
 
 }
 
+    /* I changed the font size of the heading to make it more prominent and easier to read. 
+       The original font size of 18px was a bit small for a heading, especially on an ID card where the name should stand out.
+    */
+
+h1 {
+    font-size: 24px;
+}
     /*  This styles the paragraphs within the ID card. 
         This means that any <p> element inside the .id-card class will have these styles applied. 
     */
