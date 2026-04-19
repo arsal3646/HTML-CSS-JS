@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Application Form</title>
+  
+    <!-- I have linked the JavaScript file to this HTML document using the <script> tag. 
+    This allows me to write JavaScript code in a separate file (StudApp.js). It interacts with the HTML elements on this page. 
+    
+    As required in the assignment question, JavaScript code is responsible for 
+    * handling events
+    * validating input
+    * providing feedback to the user 
+    -->
+  
+    <script src="StudApp.js"></script>
 </head>
 <body>
     
@@ -23,6 +34,33 @@
         -->
 
         <input type="text" id="name" placeholder="Saurabh Sharma" onfocusout="checkName()">
+
+        <label> Date of Birth: </label>
+
+        <!-- The <br> tag is used to create a line break in the HTML document. 
+        This is just for making it easier to read and organize the form.
+        Side Note: <br> is a self-closing tag, which means it does not require a closing tag. 
+        -->
+        
+        <br><br>
+
+        <label> Mobile Number: </label>
+
+        <br><br>
+
+        <label> Email: </label>
+
+        <br><br>
+
+        <label> City: </label>
+
+        <br><br>
+
+
+        <label> Country: </label>
+
+        <br><br>
+
 
     </form>
 
