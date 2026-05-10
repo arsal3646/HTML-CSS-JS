@@ -77,6 +77,12 @@ $sql = "INSERT INTO students
 VALUES
 ('$student_name', '$student_id', '$date_of_birth', '$gender', '$address', '$mobile_number', '$email_id', '$department')";
 
+/*  * mysqli_query() function is used to execute the SQL query on the database connection represented by variable $conn. 
+    * The $sql variable contains the SQL query string that we want to execute.
+    * The mysqli_query() function returns true if the query was successful, or false if there was an error.
+    * In our case, we are executing the INSERT query to add a new record to the "students" table with the values retrieved from the form.
+*/
+
 mysqli_query($conn, $sql);
 
 echo "Database connected successfully.<br><br>";
