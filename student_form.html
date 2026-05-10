@@ -40,7 +40,7 @@
 
 <!--    * The <form> element is used to create an HTML form for user input.
         * The "action" attribute specifies where to send the form data when the form is submitted.
-        * In this case, the form data will be sent to "student_data_processor.php"  
+        * In this case, the form data will be sent to "process_form.php"  
         * The .php file is used for server-side processing of the form data.
         * Without server-side processing, the form data cannot be stored or processed after submission.
         
@@ -52,7 +52,7 @@
         * Additionally, "post" does not expose form data in the URL, making it more secure for sensitive information.
         
 -->
-    <form action ="student_data_processor.php" method="post">
+    <form action ="process_form.php" method="post">
             
 <!--    User will enter their name here.   
 -->
@@ -103,6 +103,7 @@
         Department:<input type="text" name="department" placeholder="Arts & Fiction">
         <br><br>
 
+        <input type="submit" value="Submit the Form">
     </form>
 
 
