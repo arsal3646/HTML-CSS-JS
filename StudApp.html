@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+  
+    <!-- I have linked the JavaScript file to this HTML document using the <script> tag. 
+    This allows me to write JavaScript code in a separate file (StudApp.js). It interacts with the HTML elements on this page. 
+    
+    As required in the assignment question, JavaScript code is responsible for 
+    * handling events
+    * validating input
+    * providing feedback to the user 
+    -->
+  
+    <script src="StudApp.js"></script>
+
+    <!-- The <style> tag is used to define CSS styles for the HTML document. 
+    In this case, I am styling the <label> elements to have a fixed width. 
+    I am doing this because I want the labels to be aligned properly with the input fields in the form. 
+    -->
+
+    <style>
+        label {
+        display: inline-block;
+        width: 150px;
+        }
+</style>
+
+</head>
+<body>
+    
+    <h1>Student Application Form</h1>
+    
+    <!--This is a placeholder for the student application form. 
+        I will be adding input fields, labels, and buttons for the applicants to fill out their information.  -->
+    
+    <form onsubmit="return finalCheck()">
+        
+        <label>Student Name:</label>
+
+        <!-- 
+            * Placeholder is beautiful thing that shows the user what to input in the field. It disappears when the user starts typing.
+            * Onfocusout is an event that triggers when the user clicks outside the input field - which means they have finished entering their name. The checkName() function will be called when this event occurs.
+            * It can be used to validate the input or provide feedback to the user. 
+        -->
+
+        <input type="text" id="studentName" placeholder="Saurabh Sharma" onfocusout="NameValidation()">
+
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="text" id="dob" placeholder="dd/mm/yyyy" onfocusout="validateDOB()"> 
+
+        <!-- The <br> tag is used to create a line break in the HTML document. 
+        This is just for making it easier to read and organize the form.
+        Side Note: <br> is a self-closing tag, which means it does not require a closing tag. 
+        -->
+        
+        <br><br>
+
+        <!-- we make Age field readonly because it will be automatically calculated based on the Date of Birth input.
+        We will use JavaScript to calculate the age and display it in this field when the user enters their date of birth. 
+        -->
+
+        <label>Age: </label>
+        <input type="text" id="age" readonly>
+        <br><br>
+
+        <label>Mobile Number: </label>
+        <input type="text" id="mobile" onfocusout="validateMobile()">
+        <br><br>
+
+        <label>Email ID: </label>
+        <input type="text" id="email" onfocusout="validateEmail()">
+        
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+body 
+{
+    /*  This is the CSS file for styling the ID card webpage. 
+        It sets the background color and text color for the entire page.
+        The background color is set to moccasin while the text color is set to maroon, my favorite color. 
+    */
+    
+    background-color: moccasin;  
+    color: maroon;
+}
+
+.id-card 
+{
+    /*  This class styles the ID card container. 
+        It sets the width and height of the card, adds a border with rounded corners, and applies padding and margin for spacing. 
+        Padding means the space inside the border of the card, i.e. the space between the content of the card and its border.
+        Margin means the space outside the border of the card, i.e. the space between the card (borders) and other elements on the page.
+        I used min-height and width (not min-width) to ensure that the card maintains a minimum size, even if the content inside it is smaller.
+        Height and width were setting fixed dimensions, causing text overflow issues as the content inside the card exceeded those dimensions.
+    */
+
+    width: 340px;
+    min-height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.571);
+    border-radius: 10px;
+    padding: 20px;
+    
+    /* I changed the margin to 40px auto instead of 20px to center the card horizontally on the page. 
+       The 'auto' value for left and right margins allows the browser to calculate equal margins on both sides.
+       20px margin was more aligned to the left, making the card look unbalanced on the page.
+    */
+
+    margin: 40px auto;
+    background-color: white;
+
+    text-align: center; 
+
+    /* I added a box shadow to give the ID card a three-dimensional look. 
+       The values for the box-shadow property specify the horizontal offset, vertical offset, blur radius, and color of the shadow.
+       This creates a subtle shadow effect that makes the card stand out against the background.
+    */
+    box-shadow: 2px 2px 10px gray;
+
+    /*  I changed the text alignbment to left for the paragraphs within the ID card.
+        The centered text was harder to read, especially for longer paragraphs like the address in our ID Card.
+    */
+    
+}
+
+    /* Text-align to left ensures that all the text within the ID is aligned to the left*/
+
+.id-card p {
+    text-align: left;
+}
+
+img
+{   /*  This styles the image within the ID card. 
+        It sets the width and height of the image, and applies a border radius to make it circular. 
+        50% border radius means that the image will be perfectly circular, as long as the width and height are equal.
+        if we increase it to 100%, it will still be circular, but it may not fit within the dimensions of the image, potentially causing distortion.
+        75% border radius would create an oval shape if the width and height are not equal, and a perfect circle if they are equal.
+    */
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    display: block;
+    margin: 0 auto 15px auto;
+
+}
+
+    /* I changed the font size of the heading to make it more prominent and easier to read. 
+       The earlier font size was a bit small for a heading, especially on an ID card where the name should stand out.
+    */
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+    /*  This styles the paragraphs within the ID card. 
+        This means that any <p> element inside the .id-card class will have these styles applied. 
+    */
+
+p {
+    margin: 5px 0;
+}
+
