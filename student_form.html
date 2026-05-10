@@ -38,7 +38,22 @@
     
     <h1>Student Details Form</h1>
 
-    <form> 
+<!--    * The <form> element is used to create an HTML form for user input.
+        * The "action" attribute specifies where to send the form data when the form is submitted.
+        * In this case, the form data will be sent to "student_data_processor.php"  
+        * The .php file is used for server-side processing of the form data.
+        * Without server-side processing, the form data cannot be stored or processed after submission.
+        
+        * The "method" attribute specifies how to send the form data.
+        * "post" means the form data will be sent in the body of the HTTP request.
+        * Other method is "get", which sends form data as URL parameters. 
+        * Instead of "get", We use "post" when we want to send sensitive data or large amounts of data.
+        * This is because "get" have size limitations while "post" does not have such limitations.
+        * Additionally, "post" does not expose form data in the URL, making it more secure for sensitive information.
+        
+-->
+    <form action ="student_data_processor.php" method="post">
+            
 <!--    User will enter their name here.   
 -->
         Student Name:                
@@ -74,7 +89,7 @@
 <!-- The <select> element creates a dropdown menu for selecting gender -->
 
         Address:
-        <textarea = name"address" placeholder="123 Maritas Road BH CE"></textarea> 
+        <textarea name="address" placeholder="123 Maritas Road BH CE"></textarea> 
         <br><br>
 
         Mobile Number:
