@@ -35,6 +35,38 @@ $department = $_POST["department"];         // retrieves "department" value from
     * The dot operator (.) is used to concatenate just like we use + in JavaScript and Java.
 */
 
+/*  Create connection with MySQL/MariaDB database
+   
+    * $conn is a variable that holds the connection object returned by the mysqli_connect() function.
+    
+    * The mysqli_connect() function is used to establish a connection to MySQL/MariaDB database server. 
+    
+    * mysqli_connect() takes four parameters:
+        1. "localhost": This is the hostname of the database server. 
+            In our case, "localhost" which means the database server is running on the same machine as the PHP script.
+        
+        2. "root" is the username used to connect to the database. 
+            In our case, it is "root" which is default username for MySQL/MariaDB.
+        
+        3. "" (empty string) is password used to connect to the database. 
+            In our case, it is empty string which means there is no password set for the "root" user. 
+            In our company, we use ERP system and admin have very strong passwords. They never share with us.
+
+        4. "student_management_system": This is the name of our database to which we want to connect. 
+        
+*/
+
+$conn = mysqli_connect("localhost", "root", "", "student_management_system");
+
+// Check connection
+if (!$conn) {       // The if statement checks if the connection was successful. If $conn is false, it means the connection failed.
+
+    die("Database connection failed: " . mysqli_connect_error());  // die() function is used to terminate the script and display an error message.
+}
+
+
+echo "Database connected successfully.<br><br>";
+
 echo "Student Name: " . $student_name . "<br>"; // displays the value of $student_name variable followed by a line break
 
 echo "Student ID: " . $student_id . "<br>";     // displays the value of $student_id variable
