@@ -64,6 +64,20 @@ if (!$conn) {       // The if statement checks if the connection was successful.
     die("Database connection failed: " . mysqli_connect_error());  // die() function is used to terminate the script and display an error message.
 }
 
+// SQL query to insert data into the "students" table
+// We learnt SQL queries in our Modern Database System course.
+
+// The below line specifies that we want to insert data into the "students" table in our database.
+// We are inserting values for all the attributes which we had in our STUDENT FORM, e.g. name of student, ID, etc.
+// The VALUES keyword is used to specify the values that we want to insert into the table.
+
+$sql = "INSERT INTO students       
+(student_name, student_id, date_of_birth, gender, address, mobile_number, email_id, department)
+
+VALUES
+('$student_name', '$student_id', '$date_of_birth', '$gender', '$address', '$mobile_number', '$email_id', '$department')";
+
+mysqli_query($conn, $sql);
 
 echo "Database connected successfully.<br><br>";
 
